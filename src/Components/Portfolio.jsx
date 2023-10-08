@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/Hornbake.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "Hornbake Library";
 
 /**
  * Project list
@@ -31,16 +31,11 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title:
+      "Tracking Location, Time Zone, and Day and Night Cycles of the International Space Station",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
-  },
-  {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "My medium article on how I tracked the International Space Station using Python, but more importantly demonstrates my proficiancy using APIs like the ISS and Google Maps.",
+    url: "https://medium.com/inst414-data-science-tech/tracking-location-time-zone-and-day-and-night-cycles-of-the-international-space-station-6ffa19d2da1a",
   },
   {
     title: "My Resume Site",
