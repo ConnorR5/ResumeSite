@@ -22,10 +22,10 @@ const Education = () => {
           />
         </div>
         <div style={{ paddingLeft: "3rem" }}>
-          <h3>University of Maryland, College Park</h3>
-          <p>
-            <b>2021-Present</b>
-          </p>
+          <h3>
+            <b>University of Maryland, College Park</b>
+          </h3>
+          <p>2021-Present</p>
           <p>Major: Information Science</p>
           <p>Studying: Data Science and Machine Learning</p>
         </div>
