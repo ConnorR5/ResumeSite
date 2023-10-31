@@ -1,6 +1,6 @@
 import React from "react";
 
-import image from "../images/education.jpg";
+import image from "../images/Iribe.jpg";
 
 const imageAltText = "University of Maryland";
 
@@ -28,6 +28,16 @@ const Education = () => {
           <p>2021-Present</p>
           <p>Major: Information Science</p>
           <p>Studying: Data Science and Machine Learning</p>
+          <p>
+            <b>Notable Classes:</b>
+          </p>
+          <p>CMSC 131: (Java) Object Oriented Programming I</p>
+          <p>CMSC 132: (Java) Object Oriented Programming II</p>
+          <p>INST 326: (Python) Object Oriented Programming I</p>
+          <p>INST 327: (SQL) Database Design and Modelling</p>
+          <p>INST 414: (Multiple) Advanced Datascience tequniques and Machine Learning</p>
+          <p>PHIL 201: Einstein/Bell Quantum Physics</p>
+          <p>BMGT 230: Business Statistics</p>
         </div>
       </div>
     </section>
