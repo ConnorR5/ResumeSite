@@ -46,7 +46,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am not a programmer, I have problems that need solutions and it just so happens I know exactly how to solve them.";
+  "I am not just a programmer, I have problems that need solutions and it just so happens I know exactly how to solve them.";
 
 const About = () => {
   return (
@@ -54,7 +54,8 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "#FFD700",
+          color: "black",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",

@@ -38,10 +38,10 @@ const projectList = [
     url: "https://medium.com/inst414-data-science-tech/tracking-location-time-zone-and-day-and-night-cycles-of-the-international-space-station-6ffa19d2da1a",
   },
   {
-    title: "My Resume Site",
+    title: "Analyzing Wikipedia’s Articles for Readability, Difficulty Level, and Topic",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "My medium article on how I was able to gather, analyze, calculate, and display various reading level data from Wikipedia.",
+    url: "https://medium.com/inst414-data-science-tech/analyzing-wikipedias-articles-for-readability-difficulty-level-and-topic-ff59168d402a",
   },
   {
     title: "GitHub Codespaces and github.dev",
