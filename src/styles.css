@@ -137,3 +137,31 @@ img.socialIcon {
     transform: translateX(0%);
   }
 }
+
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-image {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover .content {
+  opacity: 0;
+}
+
+.box:hover .hover-image {
+  opacity: 1;
+}
