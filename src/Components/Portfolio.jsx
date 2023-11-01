@@ -1,46 +1,25 @@
-/**
- * Portfolio component
- *
- * Highlights some of  your creations. These can be designs, websites,
- * open source contributions, articles you've written and more.
- *
- * This is a great area for you to to continually add to and refine
- * as you continue to learn and create.
- */
-
 import React from "react";
-
-/**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */
 import image from "../images/Hornbake.jpg";
+import hoverImage1 from "../images/hoverImage1.png";
+import hoverImage2 from "../images/hoverImage2.webp";
+import hoverImage3 from "../images/hoverImage3.webp";
 
 const imageAltText = "Hornbake Library";
 
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */
 const projectList = [
   {
     title: "Journey of Starting My First Rental Property - Old Man and the Sea",
     description:
       "Gathering Data on the Housing Market, Investors, and Designing a Custom Website in my First Attempt at Property Management.",
     url: "https://medium.com/@crydel2/the-old-man-in-the-sea-5dfe50db0f4d",
+    hoverImage: hoverImage1,
   },
   {
     title: "Analyzing Wikipedia’s Articles for Readability, Difficulty Level, and Topic",
     description:
       "My medium article on how I was able to gather, analyze, calculate, and display various reading level data from Wikipedia.",
     url: "https://medium.com/inst414-data-science-tech/analyzing-wikipedias-articles-for-readability-difficulty-level-and-topic-ff59168d402a",
+    hoverImage: hoverImage2,
   },
   {
     title:
@@ -48,6 +27,7 @@ const projectList = [
     description:
       "My medium article on how I tracked the International Space Station using Python, but more importantly demonstrates my proficiancy using APIs like the ISS and Google Maps.",
     url: "https://medium.com/inst414-data-science-tech/tracking-location-time-zone-and-day-and-night-cycles-of-the-international-space-station-6ffa19d2da1a",
+    hoverImage: hoverImage3,
   },
 ];
 
@@ -72,9 +52,22 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <div className="content">
+                  <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                  <p className="small">{project.description}</p>
+                </div>
+                <img
+                  src={project.hoverImage}
+                  alt=""
+                  className="hover-image"
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    transition: "opacity 0.3s ease-in-out",
+                  }}
+                />
               </a>
-              <p className="small">{project.description}</p>
             </div>
           ))}
         </div>

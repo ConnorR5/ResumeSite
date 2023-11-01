@@ -1,35 +1,13 @@
-/**
- * About component
- *
- * Space for you to describe more about yourself.
- */
-
-import React from "react";
-
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
+import React, { useState } from "react";
 import image from "../images/theM.jpg";
 
 const imageAltText = "Maryland Flower letter M";
 
-/**
- * Sort description that expands on your title on the Home component.
- */
-const description =
+const descriptionInterest =
   "I'm a Information and Data Science student studying at The University of Maryland. I enjoy experimenting with Machine Learning and UI/UX.";
 
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
+const descriptionAbout = "Your About Me description goes here.";
+
 const skillsList = [
   "Web design",
   "User experience",
@@ -40,15 +18,15 @@ const skillsList = [
   "Graphic design",
 ];
 
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
-const detailOrQuote =
-  "I am not just a programmer, I have problems that need solutions and it just so happens I know exactly how to solve them.";
+const aboutList = [
+  "I've spent my last two summers Lifeguarding as a full time job working 6 days per week, But I'm ready to move on and start exploring where my career can take me.",
+  "Adventuring to new locations and Exploring are two of my favorite things to do, I've been all around the country and I'm always looking for new places to go.",
+  "I wanted to stretch my wings early and expirament with Entrepreneurealism. When I was young and naive, I tried my hand at dropshipping. I saw profit, but not what I thought I could achieve.",
+];
 
 const About = () => {
+  const [activeTab, setActiveTab] = useState("interests");
+
   return (
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />
@@ -62,24 +40,58 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>Fields of Interest</h2>
-        <p className="large">{description}</p>
+        <h2>{activeTab === "interests" ? "Fields of Interest" : "About Me"}</h2>
+        <p className="large">
+          {activeTab === "interests" ? descriptionInterest : descriptionAbout}
+        </p>
         <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        {activeTab === "interests" ? (
+          <div>
+            <ul
+              style={{
+                textAlign: "left",
+                columns: 2,
+                fontSize: "1.25rem",
+                margin: "2rem 3rem",
+                gap: "3rem",
+              }}
+            >
+              {skillsList.map((skill) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+            <hr />
+          </div>
+        ) : (
+          <div style={{ width: "66%", margin: "0 auto" }}>
+            <ul
+              style={{
+                listStyleType: "none",
+                fontSize: "1.25rem",
+                lineHeight: "8rem",
+                margin: "2rem 0",
+                gap: "4rem",
+              }}
+            >
+              {aboutList.map((item, index) => (
+                <li
+                  key={item}
+                  style={{
+                    marginBottom: "3rem",
+                    textAlign: index % 2 === 0 ? "left" : "right",
+                    fontFamily: "'Edu TAS Beginner', cursive",
+                  }}
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <div>
+          <button onClick={() => setActiveTab("interests")}>Fields of Interest</button>
+          <button onClick={() => setActiveTab("about")}>About Me</button>
+        </div>
       </div>
     </section>
   );

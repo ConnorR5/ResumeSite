@@ -14,8 +14,8 @@ const Education = () => {
           <img
             src={image}
             style={{
-              height: "90%",
-              width: "100%",
+              height: "60%",
+              width: "80%",
               objectFit: "cover",
               animation: "1s ease-out 0s 1 slideInLeft",
             }}
@@ -24,8 +24,8 @@ const Education = () => {
           <img
             src={image2}
             style={{
-              height: "90%",
-              width: "100%",
+              height: "60%",
+              width: "80%",
               objectFit: "cover",
               animation: "1s ease-out 0s 1 slideInLeft",
             }}
