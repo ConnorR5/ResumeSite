@@ -31,11 +31,10 @@ const imageAltText = "Hornbake Library";
  */
 const projectList = [
   {
-    title:
-      "Tracking Location, Time Zone, and Day and Night Cycles of the International Space Station",
+    title: "Journey of Starting My First Rental Property - Old Man and the Sea",
     description:
-      "My medium article on how I tracked the International Space Station using Python, but more importantly demonstrates my proficiancy using APIs like the ISS and Google Maps.",
-    url: "https://medium.com/inst414-data-science-tech/tracking-location-time-zone-and-day-and-night-cycles-of-the-international-space-station-6ffa19d2da1a",
+      "Gathering Data on the Housing Market, Investors, and Designing a Custom Website in my First Attempt at Property Management.",
+    url: "https://medium.com/@crydel2/the-old-man-in-the-sea-5dfe50db0f4d",
   },
   {
     title: "Analyzing Wikipedia’s Articles for Readability, Difficulty Level, and Topic",
@@ -44,10 +43,11 @@ const projectList = [
     url: "https://medium.com/inst414-data-science-tech/analyzing-wikipedias-articles-for-readability-difficulty-level-and-topic-ff59168d402a",
   },
   {
-    title: "Journey of Starting My First Rental Property - Old Man and the Sea",
+    title:
+      "Tracking Location, Time Zone, and Day and Night Cycles of the International Space Station",
     description:
-      "Gathering Data on the Housing Market, Investors, and Designing a Custom Website",
-    url: "https://medium.com/@crydel2/the-old-man-in-the-sea-5dfe50db0f4d",
+      "My medium article on how I tracked the International Space Station using Python, but more importantly demonstrates my proficiancy using APIs like the ISS and Google Maps.",
+    url: "https://medium.com/inst414-data-science-tech/tracking-location-time-zone-and-day-and-night-cycles-of-the-international-space-station-6ffa19d2da1a",
   },
 ];
 
