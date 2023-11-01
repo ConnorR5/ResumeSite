@@ -27176,7 +27176,7 @@ var _theMJpgDefault = parcelHelpers.interopDefault(_theMJpg);
 var _s = $RefreshSig$();
 const imageAltText = "Maryland Flower letter M";
 const descriptionInterest = "I'm a Information and Data Science student studying at The University of Maryland. I enjoy experimenting with Machine Learning and UI/UX.";
-const descriptionAbout = "Your About Me description goes here.";
+const descriptionAbout = "This is my about me section, I am me";
 const skillsList = [
     "Web design",
     "User experience",
@@ -27285,8 +27285,7 @@ const About = ()=>{
                             children: aboutList.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                     style: {
                                         marginBottom: "3rem",
-                                        textAlign: index % 2 === 0 ? "left" : "right",
-                                        fontFamily: "'Edu TAS Beginner', cursive"
+                                        textAlign: index % 2 === 0 ? "left" : "right"
                                     },
                                     children: item
                                 }, item, false, {
@@ -27311,7 +27310,7 @@ const About = ()=>{
                                 children: "Fields of Interest"
                             }, void 0, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 92,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27319,13 +27318,13 @@ const About = ()=>{
                                 children: "About Me"
                             }, void 0, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 93,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 91,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, undefined)
                 ]
