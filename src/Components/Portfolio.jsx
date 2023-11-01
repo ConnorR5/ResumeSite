@@ -44,10 +44,10 @@ const projectList = [
     url: "https://medium.com/inst414-data-science-tech/analyzing-wikipedias-articles-for-readability-difficulty-level-and-topic-ff59168d402a",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Journey of Starting My First Rental Property - Old Man and the Sea",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Gathering Data on the Housing Market, Investors, and Designing a Custom Website",
+    url: "https://medium.com/@crydel2/the-old-man-in-the-sea-5dfe50db0f4d",
   },
 ];
 

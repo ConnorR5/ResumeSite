@@ -1,6 +1,7 @@
 import React from "react";
 
 import image from "../images/Iribe.jpg";
+import image2 from "../images/education.jpg";
 
 const imageAltText = "University of Maryland";
 
@@ -12,6 +13,16 @@ const Education = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "1s ease-out 0s 1 slideInLeft",
+            }}
+            alt={imageAltText}
+          />
+          <img
+            src={image2}
             style={{
               height: "90%",
               width: "100%",
