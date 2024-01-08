@@ -3,6 +3,8 @@ import image from "../images/Hornbake.jpg";
 import hoverImage1 from "../images/hoverImage1.png";
 import hoverImage2 from "../images/hoverImage2.webp";
 import hoverImage3 from "../images/hoverImage3.webp";
+import hoverImage4 from "../images/hoverImage4.png";
+import hoverImage5 from "../images/hoverImage5.png";
 
 const imageAltText = "Hornbake Library";
 
@@ -17,7 +19,7 @@ const projectList = [
   {
     title: "Analyzing Wikipedia’s Articles for Readability, Difficulty Level, and Topic",
     description:
-      "My medium article on how I was able to gather, analyze, calculate, and display various reading level data from Wikipedia.",
+      "My Medium article on how I was able to gather, analyze, calculate, and display various reading level data from Wikipedia.",
     url: "https://medium.com/inst414-data-science-tech/analyzing-wikipedias-articles-for-readability-difficulty-level-and-topic-ff59168d402a",
     hoverImage: hoverImage2,
   },
@@ -25,9 +27,23 @@ const projectList = [
     title:
       "Tracking Location, Time Zone, and Day and Night Cycles of the International Space Station",
     description:
-      "My medium article on how I tracked the International Space Station using Python, but more importantly demonstrates my proficiancy using APIs like the ISS and Google Maps.",
+      "My Medium article on how I tracked the International Space Station using Python, but more importantly demonstrates my proficiancy using APIs like the ISS and Google Maps.",
     url: "https://medium.com/inst414-data-science-tech/tracking-location-time-zone-and-day-and-night-cycles-of-the-international-space-station-6ffa19d2da1a",
     hoverImage: hoverImage3,
+  },
+  {
+    title: "Ranking Real Estate Properties for Similarity",
+    description:
+      "My Medium article on how I gathered, cleaned, preprocessed, and ranked the ten most similar properties to an existing property. Potentially to be used for finding properties similar to one that has already been sold / off the market.",
+    url: "https://medium.com/@crydel2/ranking-real-estate-properties-for-similarity-239271d1e1b8",
+    hoverImage: hoverImage4,
+  },
+  {
+    title: "Clustering Powerlifter’s Best Lifts based on their Euclidian Distance",
+    description:
+      "My Medium article on how I gathered, cleaned, preprocessed, and clustered data to group powerlifters around the world based on similarities.",
+    url: "https://medium.com/@crydel2/clustering-powerlifters-best-lifts-based-on-their-euclidian-distance-849a1c4cbe13",
+    hoverImage: hoverImage5,
   },
 ];
 
