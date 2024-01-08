@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/Hornbake.jpg";
+import image from "../images/Hornbake.png";
 import hoverImage1 from "../images/hoverImage1.png";
 import hoverImage2 from "../images/hoverImage2.webp";
 import hoverImage3 from "../images/hoverImage3.webp";
